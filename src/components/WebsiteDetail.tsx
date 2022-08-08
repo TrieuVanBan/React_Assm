@@ -31,12 +31,12 @@ const WebsiteDetail = () => {
                 <Content1>
                     <Content11>
                         <Content1_img>
-                            <ProductImg src="https://picsum.photos/id/1005/367/267" alt="" />
+                            <ProductImg src={product.image} alt="" />
                         </Content1_img>
                         <Content1_detail>
                             <Heading3>{product.name}</Heading3>
                             <Heading2>{product.originalPrice} đ</Heading2>
-                            <Heading2>{product.saleOffPrice} đ</Heading2>
+                            <Heading3>{product.saleOffPrice} đ</Heading3>
 
                             <HeadingP>{product.description}</HeadingP>
                             <Content11>
@@ -47,17 +47,17 @@ const WebsiteDetail = () => {
                     </Content11>
                 </Content1>
                 <Content1>
-                    <HeadingP>Sản phẩm cùng loại</HeadingP>
+                    <Heading3>Sản phẩm cùng loại</Heading3>
+                    <hr />
                     <Content2>
                         {products?.map(item => {
                             return (
                                 <Product key={item.id}>
-                                    <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
+                                    <ProductImg1 src={item.image} alt="" />
                                     <ProductName><Link to={`/product-detail/`}>{item.name}</Link></ProductName>
                                     <Price>{item.saleOffPrice}<OriginalPrice>{item.originalPrice}</OriginalPrice></Price>
                                 </Product>
                             )
-
                         })}
 
                     </Content2>
@@ -77,10 +77,12 @@ const Heading2 = styled.h2`
   color: red;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: line-through;
 `
 const HeadingP = styled.p`
   color: black;
   font-size: 18px;
+  font-weight:bold
 `
 const Button = styled.button`
   color: red;

@@ -64,6 +64,14 @@ const AddProduct = () => {
 						>
 							<Input size="large" />
 						</Form.Item>
+						<Form.Item
+							name="image"
+							labelCol={{ span: 24 }}
+							label="Ảnh sản phẩm"
+							rules={[{ required: true, message: 'Ảnh sản phẩm không được trống' }]}
+						>
+							<Input size="large" />
+						</Form.Item>
 
 						<Row gutter={16}>
 							<Col span={12}>

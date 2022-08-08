@@ -46,7 +46,7 @@ const WebsiteContainer = (props: Props) => {
         {products.map((item: any) => {
           return (
             <Product key={item.id}>
-              <ProductImg src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
+              <ProductImg src={item.image} alt="" />
               <ProductName><Link to={`/${item.id}/detail`}>{item.name}</Link></ProductName>
               <Price>{item.saleOffPrice}đ<OriginalPrice>{item.originalPrice}đ</OriginalPrice></Price>
               <Description>{item.feature}</Description>
@@ -58,30 +58,33 @@ const WebsiteContainer = (props: Props) => {
         <Content1>
           <Heading3>Phụ kiện</Heading3>
           <Content1>
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yX_IlH4mPCrWu3An9m0JRUFQI9JQAct3mQ&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3sDJF2_3-Ycz8zYBS-7EDSBE0Vmy7zSrw_g&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDmJNjZZGLuAve0fdFO6-Y-ZviRaPCt6cSg&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLcaoGFtNEnlZ23HI6ATizNYQRB4YmHW-9Q&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZo6dq_vtyC2LkAYZqBso1N0kR31h3HtasPw&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkhOKubONnK2mV45p6wy0lkmLSyH55jw_a5A&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HaalYiMioswJ0sdmU_3wNw4Qq8IamDjw6w&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6m6ZFEo2aao8SRZ7TDiGOyY5kKcrkdJHRNw&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYJs2Vz_4E0HwN3njpgHKwrlgclYDIT4_wQ&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVMu0_KIaGUZNETmVmHPFds7oIJPSWZDPEpA&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXVbM9xLAXPYN5P_1k7om93ivfB5YozOJrg&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYt51Fo-fx1yRLZVDTq9Cu1Mq_31bYPjoeSg&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhapJa3O8O2sRni7-s_ccpj5DlfUxFdCqUA&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbXle3OqaSbQQb92G4qcXNw0pcDbY8BeuTA&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPX3__VerDjfAj7QqAfbECi-PHK5Wmy1UmVw&usqp=CAU" alt="" />
           </Content1>
         </Content1>
         <Content1>
           <br /><br />
           <Heading3>Linh kiện máy tính</Heading3>
           <Content1>
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
-            <ProductImg1 src="https://picsum.photos/id/1005/367/267" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8fJzPirn3pVajPKN9arAof8fbqHuGVwGFQ&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4VV5rZ5YBt2mmuSeDrCOh6dvbKYeZ-Mjog&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55nrJ6PPO-wurxJXisaG8TSgRGwwTUD-Idw&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOCK_b01YI5fDy1VCHIY5_5PJX-on6Da07g&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4NmatQBYtcOhd3W2V_gURv_uz2_KdjItMRw&usqp=CAU" alt="" />
+            <ProductImg1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bLkPah6vjohQreeZyqeRABUIsmwHhbXnSQ&usqp=CAU" alt="" />
           </Content1>
         </Content1>
       </Content>
@@ -89,8 +92,8 @@ const WebsiteContainer = (props: Props) => {
   );
 };
 const Heading3 = styled.h3`
-  color: black;
-  font-size: 18px;
+  color: blue;
+  font-size: 25px;
   font-weight: bold;
   padding-left:13 0px;
 `
@@ -113,6 +116,10 @@ height : 386px;
 padding : 15px;
 `
 const ProductImg = styled.img`
+border:1px solid #ccc;
+border-radius :3px;
+width:150px;
+height:150px
 `
 const ProductImg1 = styled.img`
 width : 9%;
@@ -142,5 +149,7 @@ text-decoration: line-through;
 const ProductName = styled.span`
 display :block;
 margin-top : 10px;
+font-size : 16px;
+font-weight:bold
 `
 export default WebsiteContainer;

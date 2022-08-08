@@ -59,8 +59,7 @@ const App = () => {
 const Wrapper = styled.div`
   max-width:1777px;
   margin: 0 auto;
-  background-color:#E5E5E5;;
-  font-family: 'Roboto';
+  font-family: 'Arial, Helvetica, sans-serif';
 `
 
 export default App

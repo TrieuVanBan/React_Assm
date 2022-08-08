@@ -5,6 +5,12 @@
       "password": "$2a$10$rpbRACtnL5xn24J5A1q60u.rDcuBPCfMRLjDYyiHlBDM9n/riKAU6",
       "phone": "01234567",
       "id": 1
+    },
+    {
+      "email": "bantvph@gmail.com",
+      "password": "$2a$10$VKXhGyW3OKhbpjFLVDMaJuI5INCwNQUba.0PZkIJ9HL7pUvJGwDJy",
+      "phone": "0985353454",
+      "id": 2
     }
   ],
   "cates": [
@@ -31,45 +37,50 @@
   ],
   "products": [
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 30000000,
-      "saleOffPrice": 27000000,
+      "name": "Apple iPhone 12",
+      "image": "https://lzd-img-global.slatic.net/g/p/d42a7396a24e0baaa0dd0dba72af9a46.png_200x200q80.jpg_.webp",
+      "originalPrice": 20000000,
+      "saleOffPrice": 18000000,
       "category": 1,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 1
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
+      "name": "Apple iPhone 12 Pro",
+      "image": "https://lzd-img-global.slatic.net/g/p/faa171c1bc69866378d5c55f7781733d.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 22000000,
+      "saleOffPrice": 21500000,
       "category": 5,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 2
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
+      "name": "Apple iPhone 12 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/ff/kf/S638be018dc704a2bb179ff12832772d3L.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 28000000,
+      "saleOffPrice": 26300000,
       "category": 3,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 3
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
+      "name": "Apple iPhone 11 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/5d9b0b6ab254f7537c9dfdf7b573c34c.png_200x200q80.jpg_.webp",
+      "originalPrice": 21000000,
+      "saleOffPrice": 19000000,
       "category": 4,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 4
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
+      "name": "Apple iPhone 11 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/e6d6261404d0c505660b131d6d311725.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 23000000,
+      "saleOffPrice": 20900000,
       "category": 2,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
@@ -77,6 +88,7 @@
     },
     {
       "name": "Apple iPhone 13 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/b03608ee3dcd8d123eabf664b34e33e2.png_200x200q80.jpg_.webp",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
       "category": 5,
@@ -85,40 +97,74 @@
       "id": 6
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
-      "category": 4,
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
-      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "name": "Apple iPhone 11",
+      "image": "https://lzd-img-global.slatic.net/g/p/5eb1c6f37e1a470a79a145bc5dff5058.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 15000000,
+      "saleOffPrice": 12000000,
+      "category": 3,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với hh",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. \n",
       "id": 7
     },
     {
       "name": "Apple iPhone 13 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/b03608ee3dcd8d123eabf664b34e33e2.png_200x200q80.jpg_.webp",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
-      "category": 2,
+      "category": 5,
       "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 8
     },
     {
-      "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
-      "category": 4,
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
-      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "name": "Apple iPhone 11",
+      "image": "https://lzd-img-global.slatic.net/g/p/5eb1c6f37e1a470a79a145bc5dff5058.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 15000000,
+      "saleOffPrice": 12000000,
+      "category": 3,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với hh",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. \n",
       "id": 9
     },
     {
-      "name": "Triệu Văn Ban",
-      "originalPrice": 111,
-      "saleOffPrice": 222,
-      "category": 3,
-      "feature": "asfsdfdsfdasf",
-      "description": "fdasfdsfdasfsdfadd",
+      "name": "Apple iPhone 11 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/e6d6261404d0c505660b131d6d311725.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 23000000,
+      "saleOffPrice": 20900000,
+      "category": 2,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 10
+    },
+    {
+      "name": "Iphone 13 Green Mini",
+      "image": "https://lzd-img-global.slatic.net/g/p/0c770d13c46b42d5cfd83ec141b7fec2.png_200x200q80.jpg_.webp",
+      "originalPrice": 25000000,
+      "saleOffPrice": 22500000,
+      "category": 1,
+      "feature": "HDR thông minh thế hệ 3, khả năng quay video HDR Dolby Vision 4K",
+      "description": "HDR thông minh thế hệ 3, khả năng quay video HDR Dolby Vision 4K",
+      "id": 11
+    },
+    {
+      "name": "Iphone 12 Pro Max White",
+      "image": "https://lzd-img-global.slatic.net/g/p/faa171c1bc69866378d5c55f7781733d.jpg_200x200q80.jpg_.webp",
+      "originalPrice": 24000000,
+      "saleOffPrice": 22900000,
+      "category": 3,
+      "feature": "Ceramic Shield, chất liệu kính bền chắc từng có trên điện thoại thông minh",
+      "description": "Ceramic Shield, chất liệu kính bền chắc từng có trên điện thoại thông minh",
+      "id": 12
+    },
+    {
+      "name": "Apple iPhone 13 Pro Max",
+      "image": "https://lzd-img-global.slatic.net/g/p/b03608ee3dcd8d123eabf664b34e33e2.png_200x200q80.jpg_.webp",
+      "originalPrice": 33990000,
+      "saleOffPrice": 27390000,
+      "category": 5,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "id": 13
     }
   ]
 }
