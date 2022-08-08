@@ -36,12 +36,12 @@ const AdminSider = (props: Props) => {
               {
                 key: '2',
                 icon: <LaptopOutlined />,
-                label: <Link to="/admin/create">Danh mục</Link>,
+                label: <Link to="/admin/category">Danh mục</Link>,
               },
               {
-                key: '3',
+                key: '3', 
                 icon: <TabletOutlined />,
-                label: 'Tài khoản',
+                label: <Link to="/admin/users">Tài khoản</Link>,
               },
               {
                 key: '4',

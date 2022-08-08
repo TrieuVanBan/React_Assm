@@ -4,19 +4,16 @@ import { Typography, Button, Table, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import { SearchOutlined, PlusOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
-import { getAll, remove } from "../api/product";
+import { getAll, remove } from "../api/category";
 import confirm from "antd/lib/modal/confirm";
 const { Paragraph } = Typography
 
 interface DataType {
   name: string;
-  saleOffPrice: number;
-  feature: string;
-  description: string;
 }
 
 
-const ListProduct = () => {
+const ListCategory = () => {
   const [dataTable, setDataTable] = useState([])
 
   useEffect(() => {
@@ -32,7 +29,7 @@ const ListProduct = () => {
     getData();
   }, [])
 
-  const DeleteProduct = async(id:any) => {
+  const DeleteCategory = async(id:any) => {
     if(window.confirm("Bạn có chắc chắn xóa không?")){
       await remove(id)
       const data = await getAll()
@@ -40,6 +37,7 @@ const ListProduct = () => {
     }
   }
   
+
   const columns: ColumnsType<DataType> = [
     {
       title: 'ID',
@@ -48,40 +46,18 @@ const ListProduct = () => {
       render: text => <p>{text}</p>,
     },
     {
-      title: 'Tên sản phẩm',
+      title: 'Tên danh mục',
       dataIndex: 'name',
       key: 'name',
       render: text => <a>{text}</a>,
-    },
-    {
-      title: 'Đặc điểm',
-      dataIndex: 'feature',
-      key: 'feature',
-      render: text => <p>{text}</p>,
-    },
-    {
-      title: 'Giá khuyến mãi',
-      dataIndex: 'saleOffPrice',
-      key: 'saleOffPrice',
-    },
-    {
-      title: 'Hình ảnh',
-      dataIndex: 'image',
-      key: 'image',
-      render: image => <img src= {image}  alt="" /> 
-    },
-    {
-      title: 'Mô tả',
-      dataIndex: 'description',
-      key: 'description',
     },
     {
       title: 'Chức năng',
       dataIndex: 'id',
       key : 'id',
       render: id => <Space>
-        <Button  type="primary"><Link to={`product/edit/${id}`}>Edit</Link></Button>
-        <Button  type="primary" onClick={() => DeleteProduct(id)} >Delete</Button>
+        <Button type="primary"><Link to={`edit/${id}`}>Edit</Link></Button>
+        <Button type="primary" onClick={() => DeleteCategory(id)} >Delete</Button>
       </Space>
     },
   ];
@@ -90,9 +66,9 @@ const ListProduct = () => {
     <>
       <Breadcrumb>
         <Typography.Title level={2} style={{ margin: 0 }}>
-          Sản Phẩm
+          Danh Mục
         </Typography.Title>
-        <Link to="/admin/product/create">
+        <Link to="/admin/category/create">
           <Button type="dashed" shape="circle" icon={<PlusOutlined />} />
         </Link>
       </Breadcrumb>
@@ -108,4 +84,4 @@ const Breadcrumb = styled.div`
     margin-top: 20px;
 `
 
-export default ListProduct
+export default ListCategory

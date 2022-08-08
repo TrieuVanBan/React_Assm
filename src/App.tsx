@@ -7,6 +7,14 @@ import WebsiteLayout from './layouts/WebsiteLayout'
 import ListProduct from './pages/ListProduct'
 import AddProduct from './pages/AddProduct'
 import UpdateProduct from './pages/UpdateProduct'
+import ListCategory from './pages/ListCategory'
+import AddCategory from './pages/AddCategory'
+import UpdateCategory from './pages/UpdateCategory'
+import ListUser from './pages/ListUser'
+import AddUser from './pages/AddUser'
+import UpdateUser from './pages/AddUser'
+import MainWebsite from './components/MainWebsite'
+import WebsiteDetail from './components/WebsiteDetail'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -14,11 +22,30 @@ const App = () => {
   return (
     <Wrapper>
       <Routes>
-        <Route path="/" element={<WebsiteLayout />}></Route>
+        {/* Client */}
+        <Route path="/" element={<WebsiteLayout />}>
+          <Route index element={<MainWebsite />} />
+          <Route path="detail" element={< WebsiteDetail/>} />
+        </Route>
+        
+        {/* Admin */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<ListProduct />} />
-          <Route path="product/create" element={<AddProduct />} />
-          <Route path="product/edit/:id" element={<UpdateProduct />} />
+      
+          <Route path="product">
+            <Route path="create" element={<AddProduct />} />
+            <Route path="edit/:id" element={<UpdateProduct />} />
+          </Route>
+          <Route path="category">
+            <Route index element={<ListCategory />} />
+            <Route path="create" element={<AddCategory />} />
+            <Route path="edit/:id" element={<UpdateCategory />} />
+          </Route>
+          <Route path="users">
+            <Route index element={<ListUser />} />
+            <Route path="create" element={<AddUser />} />
+            <Route path="edit/:id" element={<UpdateUser />} />
+          </Route>
         </Route>
       </Routes>
     </Wrapper>
