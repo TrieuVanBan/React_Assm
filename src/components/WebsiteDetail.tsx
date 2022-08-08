@@ -6,7 +6,7 @@ import { filterPro, read } from '../api/product'
 import { ProductType } from '../types/productType'
 type Props = {}
 
-const WebsiteDetail = (props: Props) => {
+const WebsiteDetail = () => {
     const { id } = useParams();
     const [product, setProduct] = useState<any>();
     const [products, setProducts] = useState<any[]>();

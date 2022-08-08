@@ -13,7 +13,7 @@ const LoginPage = (props: Props) => {
   const onSubmit = async (data:any) => {
     const {data:user} = await login(data)
     localStorage.setItem('user',JSON.stringify(user))
-    alert("Dang nhap thanh cong !");
+    alert("Bạn đã đăng nhập thành công!");
     navigate("/")
   }
   return (
