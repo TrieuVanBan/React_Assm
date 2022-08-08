@@ -20,3 +20,7 @@ export const updateCategory = (data:any,id:any) => {
     const url = `/cates/${id}`
     return instance.put(url, data)
 }
+export const getProductByCate = (id:any) =>{
+    const url = `/category/${id}?_embed=products`
+    return instance.get(url)
+}

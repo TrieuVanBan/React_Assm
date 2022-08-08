@@ -1,14 +1,25 @@
 import { Breadcrumb, Button, Col, Form, Input, InputNumber, message, Row, Select, Typography } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import { Option } from 'antd/lib/mentions';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { upload } from '../api/image';
 import { createProduct, getAll, read, updateProduct } from '../api/product';
+import { getAll as getAllCategory } from '../api/category';
+
 import UploadImage from '../components/UploadImage';
+import { CategoryType } from '../types/categoryType';
 
 const UpdateProduct = () => {
+	const [categorys, setCategorys] = useState<CategoryType[]>([])
 	const { id } = useParams()
+	useEffect(() => {
+		const getAllCate = async () => {
+			const { data } = await getAllCategory();
+			setCategorys(data);
+		}
+		getAllCate();
+	}, [])
 	// console.log(id);
 	const [form] = Form.useForm();
 	const getProducts = async () => {
@@ -108,16 +119,14 @@ const UpdateProduct = () => {
 							<Col span={12}>
 								<Form.Item
 									label="Phân loại"
-									name="categories"
+									name="category"
 									rules={[{ required: true }]}
 								>
 									<Select style={{ width: '100%' }} size="large">
-										<Option value="phone">Điện thoại</Option>
-										<Option value="laptop">Laptop</Option>
-										<Option value="accessories" disabled>
-											Phụ kiện
-										</Option>
-										<Option value="tablet">Máy tính bảng</Option>
+										<Option >Choose category</Option>
+										{categorys?.map(item => {
+											return <Option key={item.id} value={item.id}>{item.name}</Option>
+										})}
 									</Select>
 								</Form.Item>
 							</Col>

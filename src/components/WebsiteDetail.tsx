@@ -1,27 +1,44 @@
 import { Content } from 'antd/lib/layout/layout'
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, Outlet, useParams } from 'react-router-dom'
 import styled from 'styled-components'
+import { filterPro, read } from '../api/product'
+import { ProductType } from '../types/productType'
 type Props = {}
 
 const WebsiteDetail = (props: Props) => {
-    return (
-        <Content>
+    const { id } = useParams();
+    const [product, setProduct] = useState<any>();
+    const [products, setProducts] = useState<any[]>();
+    useEffect(() => {
+        const getProduct = async () => {
+            const { data } = await read(id);
+            const { data: items } = await filterPro(data.category);
+            setProducts(items);
+            setProduct(data);
+        }
+        getProduct();
+    }, [id])
+    if (product) {
+        return (
+            <Content>
                 <Menu>
                     <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Trang chủ</Menu_hover></Menu_a></Menu_li>
                     <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Giới thiệu</Menu_hover></Menu_a></Menu_li>
                     <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Liên hệ</Menu_hover></Menu_a></Menu_li>
                 </Menu>
-                <hr/>
+                <hr />
                 <Content1>
                     <Content11>
                         <Content1_img>
                             <ProductImg src="https://picsum.photos/id/1005/367/267" alt="" />
                         </Content1_img>
                         <Content1_detail>
-                            <Heading3>Iphone 13 ProMax</Heading3>
-                            <Heading2>1000 đ</Heading2>
-                            <HeadingP>Iphone 13 Promax</HeadingP>
+                            <Heading3>{product.name}</Heading3>
+                            <Heading2>{product.originalPrice} đ</Heading2>
+                            <Heading2>{product.saleOffPrice} đ</Heading2>
+
+                            <HeadingP>{product.description}</HeadingP>
                             <Content11>
                                 <Button className="btn">Mua ngay</Button>
                                 <Button className="btn">Thêm vào giỏ hàng</Button>
@@ -32,36 +49,23 @@ const WebsiteDetail = (props: Props) => {
                 <Content1>
                     <HeadingP>Sản phẩm cùng loại</HeadingP>
                     <Content2>
-                        <Product>
-                            <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
-                            <ProductName><Link to={`/product-detail/`}>Iphone 13</Link></ProductName>
-                            <Price>1000<OriginalPrice>2000</OriginalPrice></Price>
-                        </Product>
-                        <Product>
-                            <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
-                            <ProductName><Link to={`/product-detail/`}>Iphone 13</Link></ProductName>
-                            <Price>1000<OriginalPrice>2000</OriginalPrice></Price>
-                        </Product>
-                        <Product>
-                            <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
-                            <ProductName><Link to={`/product-detail/`}>Iphone 13</Link></ProductName>
-                            <Price>1000<OriginalPrice>2000</OriginalPrice></Price>
-                        </Product>
-                        <Product>
-                            <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
-                            <ProductName><Link to={`/product-detail/`}>Iphone 13</Link></ProductName>
-                            <Price>1000<OriginalPrice>2000</OriginalPrice></Price>
-                        </Product>
-                        <Product>
-                            <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
-                            <ProductName><Link to={`/product-detail/`}>Iphone 13</Link></ProductName>
-                            <Price>1000<OriginalPrice>2000</OriginalPrice></Price>
-                        </Product>
+                        {products?.map(item => {
+                            return (
+                                <Product key={item.id}>
+                                    <ProductImg1 src="https://i.picsum.photos/id/945/160/160.jpg?hmac=pEL1S7u7Azmfa0Noc3PRdZkN2uToyuNuXEYADQdsRCQ" alt="" />
+                                    <ProductName><Link to={`/product-detail/`}>{item.name}</Link></ProductName>
+                                    <Price>{item.saleOffPrice}<OriginalPrice>{item.originalPrice}</OriginalPrice></Price>
+                                </Product>
+                            )
+
+                        })}
+
                     </Content2>
                 </Content1>
-                
-        </Content>
-    )
+
+            </Content>
+        )
+    }
 }
 //Example Main
 const Heading3 = styled.h3`

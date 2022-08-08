@@ -15,6 +15,8 @@ import AddUser from './pages/AddUser'
 import UpdateUser from './pages/AddUser'
 import MainWebsite from './components/MainWebsite'
 import WebsiteDetail from './components/WebsiteDetail'
+import Login from './pages/Login'
+import RegisterPage from './pages/RegisterPage'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -25,9 +27,12 @@ const App = () => {
         {/* Client */}
         <Route path="/" element={<WebsiteLayout />}>
           <Route index element={<MainWebsite />} />
-          <Route path="detail" element={< WebsiteDetail/>} />
+          <Route path="category/:id" element={< MainWebsite/>} />
+          <Route path=":id/detail" element={< WebsiteDetail/>} />
         </Route>
         
+        <Route path="/login" element={< Login/>} />
+        <Route path="/register" element={< RegisterPage/>} />
         {/* Admin */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<ListProduct />} />

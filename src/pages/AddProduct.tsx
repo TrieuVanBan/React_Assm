@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from "styled-components";
 import { Typography, Col, Row, Button, Checkbox, Form, Input, InputNumber, Select, message } from 'antd'
 import { createProduct } from "../api/product";
 import { useNavigate } from "react-router-dom";
 import UploadImage from '../components/UploadImage';
+import { CategoryType } from '../types/categoryType';
+import { getAll } from '../api/category';
 
 const { TextArea } = Input
 const { Option } = Select;
 type Props = {}
 
 const AddProduct = () => {
-	const navigate = useNavigate()
+	const [categorys,setCategorys] = useState<CategoryType[]>([])
+	const navigate = useNavigate();
+	useEffect(() => {
+		const getAllCate = async () =>{
+			const {data} = await getAll();
+			setCategorys(data);
+		}
+		getAllCate();
+	},[])
 	const onFinish = async (values: any) => {
 		console.log('Success:', values);
 		try {
@@ -79,16 +89,13 @@ const AddProduct = () => {
 							<Col span={12}>
 								<Form.Item
 									label="Phân loại"
-									name="categories"
+									name="category"
 									rules={[{ required: true }]}
 								>
 									<Select style={{ width: '100%' }} size="large">
-										<Option value="phone">Điện thoại</Option>
-										<Option value="laptop">Laptop</Option>
-										<Option value="accessories" disabled>
-											Phụ kiện
-										</Option>
-										<Option value="tablet">Máy tính bảng</Option>
+										{categorys?.map(item =>{
+											return <Option key={item.id} value={item.id}>{item.name}</Option>
+										})}
 									</Select>
 								</Form.Item>
 							</Col>

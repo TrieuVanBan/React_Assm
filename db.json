@@ -1,14 +1,10 @@
 {
   "users": [
     {
-      "id": 2,
       "email": "ban21032002@gmail.com",
-      "phone": "0943543543"
-    },
-    {
-      "id": 3,
-      "email": "ban2002@gmail.com",
-      "phone": "0854353422"
+      "password": "$2a$10$rpbRACtnL5xn24J5A1q60u.rDcuBPCfMRLjDYyiHlBDM9n/riKAU6",
+      "phone": "01234567",
+      "id": 1
     }
   ],
   "cates": [
@@ -23,15 +19,23 @@
     {
       "id": 3,
       "name": "Máy tính bảng"
+    },
+    {
+      "id": 4,
+      "name": "Tai nghe"
+    },
+    {
+      "id": 5,
+      "name": "Sạc pin"
     }
   ],
   "products": [
     {
       "name": "Apple iPhone 13 Pro Max",
-      "originalPrice": 33990000,
-      "saleOffPrice": 27390000,
-      "image": "https://picsum.photos/id/10/367/267",
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
+      "originalPrice": 30000000,
+      "saleOffPrice": 27000000,
+      "category": 1,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 1
     },
@@ -39,8 +43,8 @@
       "name": "Apple iPhone 13 Pro Max",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
-      "image": "https://picsum.photos/id/1001/367/267",
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
+      "category": 5,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 2
     },
@@ -48,8 +52,8 @@
       "name": "Apple iPhone 13 Pro Max",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
-      "image": "https://picsum.photos/id/1000/367/267",
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
+      "category": 3,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 3
     },
@@ -57,8 +61,8 @@
       "name": "Apple iPhone 13 Pro Max",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
-      "image": "https://picsum.photos/id/1003/367/267",
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
+      "category": 4,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 4
     },
@@ -66,10 +70,55 @@
       "name": "Apple iPhone 13 Pro Max",
       "originalPrice": 33990000,
       "saleOffPrice": 27390000,
-      "image": "https://picsum.photos/id/1005/367/267",
-      "feature": "Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn3\nChế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\nHệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes, HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K",
+      "category": 2,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
       "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
       "id": 5
+    },
+    {
+      "name": "Apple iPhone 13 Pro Max",
+      "originalPrice": 33990000,
+      "saleOffPrice": 27390000,
+      "category": 5,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "id": 6
+    },
+    {
+      "name": "Apple iPhone 13 Pro Max",
+      "originalPrice": 33990000,
+      "saleOffPrice": 27390000,
+      "category": 4,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "id": 7
+    },
+    {
+      "name": "Apple iPhone 13 Pro Max",
+      "originalPrice": 33990000,
+      "saleOffPrice": 27390000,
+      "category": 2,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "id": 8
+    },
+    {
+      "name": "Apple iPhone 13 Pro Max",
+      "originalPrice": 33990000,
+      "saleOffPrice": 27390000,
+      "category": 4,
+      "feature": "Màn hình Super Retina XDR 6.7 inch với ",
+      "description": "Cần có gói cước dữ liệu. Mạng 5G chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà mạng. Tốc độ có thể thay đổi tùy địa điểm và nhà mạng. Để biết thông tin về hỗ trợ mạng 5G, vui lòng liên hệ nhà mạng và truy cập apple.com/iphone/cellular.\n\n2Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập apple.com/batteries để biết thêm thông tin.\n\n",
+      "id": 9
+    },
+    {
+      "name": "Triệu Văn Ban",
+      "originalPrice": 111,
+      "saleOffPrice": 222,
+      "category": 3,
+      "feature": "asfsdfdsfdasf",
+      "description": "fdasfdsfdasfsdfadd",
+      "id": 10
     }
   ]
 }

@@ -20,3 +20,11 @@ export const updateUsers = (data:any,id:any) => {
     const url = `/user/${id}`
     return instance.put(url, data)
 }
+export const login = (values:any) =>{
+    const url = `signin`
+    return instance.post(url,values)
+}
+export const register = (values:any) =>{
+    const url = `register`
+    return instance.post(url,values)
+}
