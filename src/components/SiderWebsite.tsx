@@ -33,7 +33,7 @@ const SiderWebsite = (props: Props) => {
   return (
     <Sider className="site-layout-background" width={220}>
       <Menu
-        mode="inline"
+        mode="vertical"
         defaultSelectedKeys={['1']}
         style={{ height: '100%', borderRight: 0 }}>
           <Link style={navLink} to={`/`} ><Menu.Item >All</Menu.Item></Link>

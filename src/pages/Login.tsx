@@ -15,7 +15,7 @@ const LoginPage = (props: Props) => {
   const onSubmit = async (data:any) => {
     const {data:user} = await login(data)
     localStorage.setItem('user',JSON.stringify(user))
-    alert("Bạn đã đăng nhập thành công!");
+    // alert("Bạn đã đăng nhập thành công!");
     navigate("/")
   }
   return (
@@ -53,8 +53,8 @@ const LoginPage = (props: Props) => {
           <Form.Item>
             <Button type="primary" htmlType="submit" style={{ width: "100%" }} className=" mt-3 login-form-button">
               Đăng Nhập
-            </Button><span style={{ marginTop: "10px" }}>Bạn Chưa Có Tài Khoản ? </span>
-            <br /><Link to="/register" className=""> Đăng Ký Ngay !</Link>
+            </Button><span style={{ marginTop: "10px" }}>Bạn Chưa Có Tài Khoản? </span>
+            <br /><Link to="/register" className=""> Đăng Ký Ngay!</Link>
           </Form.Item>
         </Form>
         <Image>

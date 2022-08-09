@@ -9,7 +9,6 @@ type Props = {
 };
 
 const WebsiteContainer = (props: Props) => {
-  ;
   const [products, setProducts]: any = useState([]);
   const { id } = useParams();
   if (props.productCates) {
@@ -47,7 +46,7 @@ const WebsiteContainer = (props: Props) => {
           return (
             <Product key={item.id}>
               <ProductImg src={item.image} alt="" />
-              <ProductName><Link to={`/${item.id}/detail`}>{item.name}</Link></ProductName>
+              <ProductName className="prd"><Link to={`/${item.id}/detail`}>{item.name}</Link></ProductName>
               <Price>{item.saleOffPrice}đ<OriginalPrice>{item.originalPrice}đ</OriginalPrice></Price>
               <Description>{item.feature}</Description>
             </Product>
@@ -149,7 +148,7 @@ text-decoration: line-through;
 const ProductName = styled.span`
 display :block;
 margin-top : 10px;
-font-size : 16px;
+font-size : 15px;
 font-weight:bold
 `
 export default WebsiteContainer;

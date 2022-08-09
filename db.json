@@ -11,6 +11,12 @@
       "password": "$2a$10$VKXhGyW3OKhbpjFLVDMaJuI5INCwNQUba.0PZkIJ9HL7pUvJGwDJy",
       "phone": "0985353454",
       "id": 2
+    },
+    {
+      "email": "ban2221032002@gmail.com",
+      "password": "$2a$10$7ePHK6hhzLZ2zaqNfYO0VevCWlqEiNQle4dG4zxzNDHWebdGxCCau",
+      "phone": "098535345466",
+      "id": 3
     }
   ],
   "cates": [

@@ -23,7 +23,7 @@ const WebsiteDetail = () => {
         return (
             <Content>
                 <Menu>
-                    <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Trang chủ</Menu_hover></Menu_a></Menu_li>
+                    <Menu_li> <Menu_a href="http://127.0.0.1:5173/"><Menu_hover>Trang chủ</Menu_hover></Menu_a></Menu_li>
                     <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Giới thiệu</Menu_hover></Menu_a></Menu_li>
                     <Menu_li> <Menu_a href="https://www.facebook.com/"><Menu_hover>Liên hệ</Menu_hover></Menu_a></Menu_li>
                 </Menu>

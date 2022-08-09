@@ -60,8 +60,8 @@ const RegisterPage = (props: SignUpProps) => {
           <Form.Item>
             <Button type="primary" htmlType="submit" style={{ width: "100%" }} className="login-form-button">
               Đăng Ký
-            </Button><span style={{ marginTop: "10px" }}>Bạn Đã Có Tài Khoản ?  </span>
-            <br /><Link to="/login" className="">Đăng Nhập Ngay !</Link>
+            </Button><span style={{ marginTop: "10px" }}>Bạn Đã Có Tài Khoản?  </span>
+            <br /><Link to="/login" className="">Đăng Nhập Ngay!</Link>
           </Form.Item>
         </Form>
         <Image>

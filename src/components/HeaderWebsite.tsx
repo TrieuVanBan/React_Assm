@@ -7,6 +7,7 @@ import LookUpImage from '../assets/lookup.png'
 import Tracking from '../assets/tracking.png'
 import CartImage from '../assets/cart.png'
 import { Header } from 'antd/lib/layout/layout'
+import { Link } from 'react-router-dom'
 type Props = {}
 const HeaderStyle: React.CSSProperties = {
   backgroundColor : '#D70018',
@@ -47,6 +48,10 @@ const HeaderWebsite = (props: Props) => {
             <CartImg src={CartImage}/>
             <CartLink>Giỏ <br /> Hàng</CartLink>
           </Cart>
+          <DivLink>
+            <Link to="/login"><p style={{color: 'white', padding:"0 10px 0 30px"}}>Đăng nhập</p></Link>
+            <Link to="/register"><p style={{color: 'white'}}>Đăng ký</p></Link>
+          </DivLink>
         </Nav>
     </Header>
   )
@@ -112,4 +117,10 @@ margin : 8px 4px;
 const CartLink = styled.a`
 color: #ffff;
 `
+const DivLink = styled.div`
+display :flex;
+font-size :14px;
+margin-top :10px;
+`
+
 export default HeaderWebsite
